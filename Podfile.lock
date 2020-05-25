@@ -1,0 +1,20 @@
+PODS:
+  - LayoutHelper (0.1.3)
+  - lottie-ios (3.1.8)
+
+DEPENDENCIES:
+  - LayoutHelper
+  - lottie-ios
+
+SPEC REPOS:
+  trunk:
+    - LayoutHelper
+    - lottie-ios
+
+SPEC CHECKSUMS:
+  LayoutHelper: 89385ca8de2464665b777265da86c84c1a28a128
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+
+PODFILE CHECKSUM: d8cb587be418284c7e27b4731d4daabc5862b108
+
+COCOAPODS: 1.8.3
