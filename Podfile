@@ -8,6 +8,8 @@ target 'Authentication App' do
   # Pods for Authentication App
 	pod 'LayoutHelper'
   pod 'lottie-ios'
+  pod 'Alamofire'
+  pod 'PopupDialog'
 
   target 'Authentication AppTests' do
     inherit! :search_paths

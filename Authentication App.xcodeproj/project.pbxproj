@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5073E712FE1E08F100F5CB30 /* AuthAppNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073E711FE1E08F100F5CB30 /* AuthAppNetworkService.swift */; };
+		5073E714FE1E08F100F5CB30 /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073E713FE1E08F100F5CB30 /* URLHelper.swift */; };
+		5073E716FE1E08F100F5CB30 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073E715FE1E08F100F5CB30 /* Extension.swift */; };
+		5073E718FE1E08F100F5CB30 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073E717FE1E08F100F5CB30 /* OTPViewController.swift */; };
 		509D00862479EC6400A9915A /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509D00852479EC6400A9915A /* EntryViewController.swift */; };
 		509D00892479F17900A9915A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509D00882479F17900A9915A /* Constants.swift */; };
 		509D008B2479F46A00A9915A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509D008A2479F46A00A9915A /* SignInViewController.swift */; };
@@ -49,6 +53,10 @@
 /* Begin PBXFileReference section */
 		00C152DBD5F4F608E76FBDA1 /* Pods-Authentication App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authentication App.release.xcconfig"; path = "Target Support Files/Pods-Authentication App/Pods-Authentication App.release.xcconfig"; sourceTree = "<group>"; };
 		37E78EE34F35D962CBEB909D /* Pods_Authentication_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Authentication_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5073E711FE1E08F100F5CB30 /* AuthAppNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAppNetworkService.swift; sourceTree = "<group>"; };
+		5073E713FE1E08F100F5CB30 /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
+		5073E715FE1E08F100F5CB30 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5073E717FE1E08F100F5CB30 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		509D007E2479DE5B00A9915A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		509D007F2479DFEB00A9915A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		509D00802479DFEB00A9915A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
@@ -115,6 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5073E70FFE1E08F100F5CB30 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5073E711FE1E08F100F5CB30 /* AuthAppNetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		509D007D2479DE3A00A9915A /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +153,7 @@
 				509D0091247B1A0500A9915A /* UpdatePasswordViewController.swift */,
 				509D0093247B1A6000A9915A /* SignUpViewController.swift */,
 				509D0095247B1ACF00A9915A /* UpdateProfileViewController.swift */,
+				5073E717FE1E08F100F5CB30 /* OTPViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -145,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				509D00882479F17900A9915A /* Constants.swift */,
+				5073E713FE1E08F100F5CB30 /* URLHelper.swift */,
+				5073E715FE1E08F100F5CB30 /* Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -182,6 +201,7 @@
 		50C22FB7FE1E39C90021BE14 /* Authentication App */ = {
 			isa = PBXGroup;
 			children = (
+				5073E70FFE1E08F100F5CB30 /* Network */,
 				509D008C247A369000A9915A /* UICustomization */,
 				509D00872479F15200A9915A /* Utils */,
 				509D00842479EC3400A9915A /* View Controllers */,
@@ -478,16 +498,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5073E716FE1E08F100F5CB30 /* Extension.swift in Sources */,
 				509D0094247B1A6000A9915A /* SignUpViewController.swift in Sources */,
 				509D008B2479F46A00A9915A /* SignInViewController.swift in Sources */,
 				50C22FBDFE1E39C90021BE14 /* ViewController.swift in Sources */,
+				5073E718FE1E08F100F5CB30 /* OTPViewController.swift in Sources */,
 				509D0092247B1A0500A9915A /* UpdatePasswordViewController.swift in Sources */,
 				509D00862479EC6400A9915A /* EntryViewController.swift in Sources */,
 				50C22FB9FE1E39C90021BE14 /* AppDelegate.swift in Sources */,
 				50C22FBBFE1E39C90021BE14 /* SceneDelegate.swift in Sources */,
+				5073E714FE1E08F100F5CB30 /* URLHelper.swift in Sources */,
 				509D0090247B196200A9915A /* ForgotPasswordViewController.swift in Sources */,
 				50C22FC3FE1E39C90021BE14 /* Authentication_App.xcdatamodeld in Sources */,
 				509D0096247B1ACF00A9915A /* UpdateProfileViewController.swift in Sources */,
+				5073E712FE1E08F100F5CB30 /* AuthAppNetworkService.swift in Sources */,
 				509D00892479F17900A9915A /* Constants.swift in Sources */,
 				509D008E247A36D200A9915A /* Buttons.swift in Sources */,
 			);

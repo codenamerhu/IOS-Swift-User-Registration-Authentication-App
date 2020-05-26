@@ -13,6 +13,10 @@ class UpdateProfileViewController: UIViewController {
     @IBOutlet weak var profilePictures: UIImageView!
     @IBOutlet weak var saveButton: UIButton!
     
+    @IBOutlet weak var greetings: UILabel!
+    
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +34,8 @@ extension UpdateProfileViewController {
         
         profileImage()
         setupButton()
+        
+        greetings.text = "Hello \(defaults.value(forKey: Keys.full_name)!)"
     }
     
     func profileImage(){
